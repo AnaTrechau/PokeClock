@@ -5,10 +5,10 @@
 }
 
 body {
-    background-color: #696969;
+    background-color: #000000;
     color: #fefefe;
     text-align: center;
-    margin: 10px auto;
+    margin: 140px auto;
     font-size: 40px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,4 +33,42 @@ section {
     width: 200px;
     height: 200px;
     border-radius: 100%;
+}
+
+@media (max-width: 900px)
+{
+    body {
+        background-color: #050505;
+        color: #202020;
+        text-align: center;
+        margin: 200px auto;
+        font-size: 40px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        
+    }
+
+    section {
+        background-color: white;
+        color: #0d0d0d;
+        border-radius: 8px;
+        padding: 10px;
+        width: 300px;
+        margin: 100px auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+    }
+    .message {
+        margin-bottom: 5px;
+    }
+
+    .photo {
+        margin: 0px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+    }
+    p{
+        color: white;
+    }
+    
 }
