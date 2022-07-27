@@ -4,7 +4,13 @@ function checkTime(){
 
     let hours = new Date().getHours()
     let minutes = new Date().getMinutes()
-    message.innerHTML = `It's ${hours}:${minutes}`
+
+    if (minutes < 10) {
+        message.innerHTML = `It's ${hours}:0${minutes}`
+    }
+    else {
+        message.innerHTML = `It's ${hours}:${minutes}`
+    }
 
     if (hours>= 5 && hours < 12){
         body.style.backgroundImage = "url('assets/morning.png')";
