@@ -5,12 +5,10 @@
 }
 
 body {
-    background-color: #000000;
     color: #fefefe;
     text-align: center;
     margin: 140px auto;
     font-size: 40px;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -38,14 +36,11 @@ section {
 @media (max-width: 900px)
 {
     body {
-        background-color: #050505;
-        color: #202020;
+        color: #0d0d0d;
         text-align: center;
         margin: 200px auto;
         font-size: 40px;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        
+        background-size: 100% 100%; 
     }
 
     section {
