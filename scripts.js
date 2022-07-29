@@ -3,8 +3,7 @@ function checkTime(){
     let message = document.querySelector('.message');
     let img = document.querySelector('img.photo');
 
-    //let hours = new Date().getHours()
-    hours = 19
+    let hours = new Date().getHours()
     let minutes = new Date().getMinutes()
     if (minutes < 10) {
         message.innerHTML = `It's ${hours}:0${minutes}`
