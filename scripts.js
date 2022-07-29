@@ -3,7 +3,8 @@ function checkTime(){
     let message = document.querySelector('.message');
     let img = document.querySelector('img.photo');
 
-    let hours = new Date().getHours()
+    //let hours = new Date().getHours()
+    hours = 19
     let minutes = new Date().getMinutes()
     if (minutes < 10) {
         message.innerHTML = `It's ${hours}:0${minutes}`
@@ -18,9 +19,11 @@ function checkTime(){
     } else if(hours >= 12 && hours <= 18){
         body.style.backgroundImage = "url('assets/afternoon.png')";
         img.src = "assets/afternoongif.gif"
+        body.style.color = "#fefefe"
     } else {
         body.style.backgroundImage = "url('assets/night.png')";
         img.src = "assets/nightgif.gif"
+        body.style.color = "#fefefe"
     }
     
 }
