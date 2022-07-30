@@ -5,11 +5,13 @@ function checkTime(){
 
     let hours = new Date().getHours()
     let minutes = new Date().getMinutes()
+    let seconds  = new Date().getSeconds()
     if (minutes < 10) {
-        message.innerHTML = `It's ${hours}:0${minutes}`
-    }
-    else {
-        message.innerHTML = `It's ${hours}:${minutes}`
+        message.innerHTML = `It's ${hours}:0${minutes}:${seconds}`
+    } else if (seconds < 10) {
+        message.innerHTML = `It's ${hours}:${minutes}:0${seconds}`
+    } else {
+        message.innerHTML = `It's ${hours}:${minutes}:${seconds}`
     }
 
     if (hours>= 5 && hours < 12){
@@ -25,6 +27,7 @@ function checkTime(){
         body.style.color = "#fefefe"
     }
     
+    setTimeout(checkTime, 1000);
 }
 
 
