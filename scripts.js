@@ -13,7 +13,6 @@ function checkTime(){
     } else {
         message.innerHTML = `It's ${hours}:${minutes}:${seconds}`
     }
-
     if (hours>= 5 && hours < 12){
         body.style.backgroundImage = "url('assets/morning.png')";
         img.src = "assets/morninggif.gif"
